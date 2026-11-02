@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-base="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Foundations of AI | AI in Africa</title>
+<meta name="description" content="Internet, electricity and mobile access across Africa compared with AI readiness.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&amp;family=Roboto+Slab:wght@500;700&amp;display=swap">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/charts.js" defer></script>
+<script src="../js/pages.js" defer></script>
+</head>
+<body data-page="infrastructure">
+<header class="site-header">
+<nav class="nav" aria-label="Main">
+<a class="brand" href="../index.html">AI IN <span>AFRICA</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+<ul><li><a href="../index.html">Home</a></li><li><a href="readiness.html">Readiness gap</a></li><li><a href="infrastructure.html" aria-current="page">Infrastructure</a></li><li><a href="skills.html">Human capital</a></li><li><a href="togo.html">Togo</a></li><li><a href="future.html">The road ahead</a></li><li><a href="data.html">Data</a></li></ul>
+</nav>
+</header>
+<main>
+
+<section class="hero"><p class="eyebrow">02 · Infrastructure</p><h1>Can Africa Build the Infrastructure for AI?</h1><p class="lede">AI needs electricity, connectivity and devices before it needs algorithms.</p><svg class="stripe" viewBox="0 0 140 8" aria-hidden="true"><rect class="a" x="0" y="0" width="46" height="8"/><rect class="b" x="47" y="0" width="46" height="8"/><rect class="c" x="94" y="0" width="46" height="8"/></svg>
+<p>Here we ask whether countries with stronger digital infrastructure also tend to score higher on AI readiness. A strong association would still not prove that one causes the other: both depend on income and other factors.</p></section>
+<section class="section">
+<div class="controls"><label for="infra-ind">Indicator for map and ranking</label><select id="infra-ind"><option value="internet">Internet users (% of population)</option><option value="electricity">Access to electricity (% of population)</option><option value="mobile">Mobile subscriptions per 100 people</option></select></div>
+<figure class="viz"><h3>Map of the selected indicator</h3><div class="chart" id="infra-map"></div><figcaption id="infra-map-cap"></figcaption></figure>
+<figure class="viz"><h3>Countries ranked by the selected indicator</h3><div class="chart" id="infra-bar"></div><figcaption id="infra-bar-cap"></figcaption></figure>
+<figure class="viz"><h3>Infrastructure versus AI readiness</h3><div class="controls"><label for="sc-x">X axis</label><select id="sc-x"><option value="internet">Internet users (% of population)</option><option value="electricity">Access to electricity (% of population)</option><option value="mobile">Mobile subscriptions per 100 people</option></select></div><div class="chart" id="scatter"></div><p class="note" id="corr"></p><figcaption id="scatter-cap"></figcaption></figure>
+<figure class="viz"><h3>Change over time</h3><div class="controls"><label for="line-ind">Indicator</label><select id="line-ind"><option value="internet">Internet users (% of population)</option><option value="electricity">Access to electricity (% of population)</option><option value="mobile">Mobile subscriptions per 100 people</option></select></div><div class="chips" id="line-chips"></div><div class="chart" id="lines"></div><figcaption id="lines-cap"></figcaption></figure>
+</section>
+</main>
+<footer class="site-footer">
+<div class="inner">
+<section><h3>AI in Africa</h3><p>Is the continent ready for the AI revolution? A data visualization project on AI readiness across Africa, with a focus on Togo.</p></section>
+<section><h3>Author</h3><ul><li>Yawovi Joseph Essossima (student ID 9980192)</li><li><a href="mailto:9980192@studenti.unige.it">9980192@studenti.unige.it</a></li><li>Università di Genova</li><li>Course: Data Visualization (90529)</li></ul></section>
+<section><h3>Data sources</h3><ul><li><a href="https://oxfordinsights.com/ai-readiness/government-ai-readiness-index-2025/">Oxford Insights AI Readiness Index 2025</a></li><li><a href="https://data.worldbank.org/">World Bank Open Data</a></li><li><a href="https://ourworldindata.org/artificial-intelligence">Our World in Data</a></li><li><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">Stanford AI Index 2026</a></li><li><a href="https://oecd.ai/en/">OECD.AI</a></li></ul><p>Last updated: 1 November 2026</p></section>
+</div>
+</footer>
+</body>
+</html>

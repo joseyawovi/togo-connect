@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-base="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Human Capital Question | AI in Africa</title>
+<meta name="description" content="Education, research and skills indicators as proxies for AI capacity in Africa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&amp;family=Roboto+Slab:wght@500;700&amp;display=swap">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/charts.js" defer></script>
+<script src="../js/pages.js" defer></script>
+</head>
+<body data-page="skills">
+<header class="site-header">
+<nav class="nav" aria-label="Main">
+<a class="brand" href="../index.html">AI IN <span>AFRICA</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+<ul><li><a href="../index.html">Home</a></li><li><a href="readiness.html">Readiness gap</a></li><li><a href="infrastructure.html">Infrastructure</a></li><li><a href="skills.html" aria-current="page">Human capital</a></li><li><a href="togo.html">Togo</a></li><li><a href="future.html">The road ahead</a></li><li><a href="data.html">Data</a></li></ul>
+</nav>
+</header>
+<main>
+
+<section class="hero"><p class="eyebrow">03 · Human capital</p><h1>Does Africa Have the Skills to Compete in the AI Era?</h1><p class="lede">People who can build, adapt and govern AI matter as much as cables and data centres.</p><svg class="stripe" viewBox="0 0 140 8" aria-hidden="true"><rect class="a" x="0" y="0" width="46" height="8"/><rect class="b" x="47" y="0" width="46" height="8"/><rect class="c" x="94" y="0" width="46" height="8"/></svg>
+<p class="callout">There is no reliable, comparable measure of AI skills for all African countries. The indicators below are <strong>proxies</strong>: they describe education and research capacity in general, not AI talent specifically.</p></section>
+<section class="section">
+<figure class="viz"><h3>Country comparison</h3><div class="controls"><label for="hc-ind">Indicator</label><select id="hc-ind"><option value="tertiary">Tertiary enrolment (% gross)</option><option value="rd">R&amp;D expenditure (% of GDP)</option><option value="researchers">Researchers per million people</option><option value="ox_human_capital">Oxford: human capital sub-pillar</option></select></div><div class="chart" id="hc-bar"></div><p class="note" id="hc-missing"></p><figcaption id="hc-bar-cap"></figcaption></figure>
+<figure class="viz"><h3>Education and research versus AI readiness</h3><div class="controls"><label for="hc-x">X axis</label><select id="hc-x"><option value="tertiary">Tertiary enrolment (% gross)</option><option value="rd">R&amp;D expenditure (% of GDP)</option><option value="researchers">Researchers per million people</option></select></div><div class="chart" id="hc-scatter"></div><p class="note" id="hc-corr"></p><figcaption id="hc-scatter-cap"></figcaption></figure>
+<figure class="viz"><h3>North Africa and Sub-Saharan Africa compared</h3><div class="chart" id="region"></div><figcaption id="region-cap"></figcaption></figure>
+</section>
+</main>
+<footer class="site-footer">
+<div class="inner">
+<section><h3>AI in Africa</h3><p>Is the continent ready for the AI revolution? A data visualization project on AI readiness across Africa, with a focus on Togo.</p></section>
+<section><h3>Author</h3><ul><li>Yawovi Joseph Essossima (student ID 9980192)</li><li><a href="mailto:9980192@studenti.unige.it">9980192@studenti.unige.it</a></li><li>Università di Genova</li><li>Course: Data Visualization (90529)</li></ul></section>
+<section><h3>Data sources</h3><ul><li><a href="https://oxfordinsights.com/ai-readiness/government-ai-readiness-index-2025/">Oxford Insights AI Readiness Index 2025</a></li><li><a href="https://data.worldbank.org/">World Bank Open Data</a></li><li><a href="https://ourworldindata.org/artificial-intelligence">Our World in Data</a></li><li><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">Stanford AI Index 2026</a></li><li><a href="https://oecd.ai/en/">OECD.AI</a></li></ul><p>Last updated: 1 November 2026</p></section>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-base="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datasets | AI in Africa</title>
+<meta name="description" content="Downloadable datasets and data dictionary behind the AI in Africa visualizations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&amp;family=Roboto+Slab:wght@500;700&amp;display=swap">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/charts.js" defer></script>
+<script src="../js/pages.js" defer></script>
+</head>
+<body data-page="data">
+<header class="site-header">
+<nav class="nav" aria-label="Main">
+<a class="brand" href="../index.html">AI IN <span>AFRICA</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+<ul><li><a href="../index.html">Home</a></li><li><a href="readiness.html">Readiness gap</a></li><li><a href="infrastructure.html">Infrastructure</a></li><li><a href="skills.html">Human capital</a></li><li><a href="togo.html">Togo</a></li><li><a href="future.html">The road ahead</a></li><li><a href="data.html" aria-current="page">Data</a></li></ul>
+</nav>
+</header>
+<main>
+
+<section class="hero"><p class="eyebrow">06 · Data</p><h1>Datasets and downloads</h1><p class="lede">Every chart on this site is built from the files below — download them and explore the numbers yourself.</p><svg class="stripe" viewBox="0 0 140 8" aria-hidden="true"><rect class="a" x="0" y="0" width="46" height="8"/><rect class="b" x="47" y="0" width="46" height="8"/><rect class="c" x="94" y="0" width="46" height="8"/></svg></section>
+
+<section class="section" aria-labelledby="files-h">
+<h2 id="files-h">Download the data</h2>
+<div class="grid">
+<article class="card"><h3>Main indicator table</h3><p>One row per African country: AI readiness scores, sub-pillars, and World Bank indicators, with the year each value refers to.</p><p><a class="btn" href="../data/africa-indicators.csv" download>africa-indicators.csv</a></p></article>
+<article class="card"><h3>Full dataset (JSON)</h3><p>The same data in JSON, plus country time series and the global leaders used for comparison charts.</p><p><a class="btn" href="../data/africa.json" download>africa.json</a></p></article>
+<article class="card"><h3>Map shapes (JSON)</h3><p>Simplified country borders used to draw the maps of Africa.</p><p><a class="btn" href="../data/africa-map.json" download>africa-map.json</a></p></article>
+</div>
+<p class="note">CSV opens directly in Excel, Google Sheets or R. JSON is plain text readable in any editor.</p>
+</section>
+
+<section class="section" aria-labelledby="dict-h">
+<h2 id="dict-h">Data dictionary — africa-indicators.csv</h2>
+<table class="data-table">
+<thead><tr><th>Column</th><th>Meaning</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>iso3, iso2, name</td><td>Country codes (ISO 3166) and name</td><td>ISO standard</td></tr>
+<tr><td>region</td><td>World Bank region (Sub-Saharan Africa, or MENA for North African members)</td><td>World Bank</td></tr>
+<tr><td>income</td><td>World Bank income group</td><td>World Bank</td></tr>
+<tr><td>readiness</td><td>Government AI Readiness Index score, 0–100 (2025)</td><td>Oxford Insights</td></tr>
+<tr><td>africaRank</td><td>Rank of the score within the 54 African countries</td><td>computed</td></tr>
+<tr><td>globalRank</td><td>Rank of the score worldwide (of 195 countries and territories covered)</td><td>Oxford Insights</td></tr>
+<tr><td>ox_policy_capacity</td><td>Sub-pillar: policy capacity, 0–100</td><td>Oxford Insights</td></tr>
+<tr><td>ox_ai_infrastructure</td><td>Sub-pillar: AI infrastructure, 0–100</td><td>Oxford Insights</td></tr>
+<tr><td>ox_governance</td><td>Sub-pillar: governance, 0–100</td><td>Oxford Insights</td></tr>
+<tr><td>ox_public_sector_adoption</td><td>Sub-pillar: public-sector adoption, 0–100</td><td>Oxford Insights</td></tr>
+<tr><td>ox_development_diffusion</td><td>Sub-pillar: development &amp; diffusion, 0–100</td><td>Oxford Insights</td></tr>
+<tr><td>ox_resilience</td><td>Sub-pillar: resilience, 0–100</td><td>Oxford Insights</td></tr>
+<tr><td>ox_human_capital</td><td>Sub-pillar: human capital, 0–100</td><td>Oxford Insights</td></tr>
+<tr><td>ox_compute_capacity</td><td>Sub-pillar: compute capacity, 0–100</td><td>Oxford Insights</td></tr>
+<tr><td>internet, internetYear</td><td>Individuals using the internet, % of population, and reference year</td><td>World Bank (IT.NET.USER.ZS)</td></tr>
+<tr><td>electricity, electricityYear</td><td>Access to electricity, % of population, and reference year</td><td>World Bank (EG.ELC.ACCS.ZS)</td></tr>
+<tr><td>mobile, mobileYear</td><td>Mobile subscriptions per 100 people, and reference year</td><td>World Bank (IT.CEL.SETS.P2)</td></tr>
+<tr><td>tertiary, tertiaryYear</td><td>Gross tertiary enrolment ratio, %, and reference year</td><td>World Bank / UNESCO (SE.TER.ENRR)</td></tr>
+<tr><td>rd, rdYear</td><td>R&amp;D expenditure, % of GDP, and reference year</td><td>World Bank / UNESCO (GB.XPD.RSDV.GD.ZS)</td></tr>
+<tr><td>researchers, researchersYear</td><td>Researchers per million people, and reference year</td><td>World Bank / UNESCO (SP.POP.SCIE.RD.P6)</td></tr>
+<tr><td>gdppc, gdppcYear</td><td>GDP per person, purchasing power parity (constant 2021 intl $), and reference year</td><td>World Bank (NY.GDP.PCAP.PP.KD)</td></tr>
+</tbody>
+</table>
+<p class="note">An empty cell means the source reports no value for that country — charts skip or flag these as “no data”.</p>
+</section>
+
+<section class="section" aria-labelledby="json-h">
+<h2 id="json-h">What is inside africa.json</h2>
+<ul>
+<li><strong>countries</strong> — the 54 countries, same fields as the CSV.</li>
+<li><strong>series</strong> — year-by-year World Bank time series (internet, electricity, mobile, tertiary) used by the line charts.</li>
+<li><strong>globalLeaders</strong> — the top-scoring countries worldwide, used in the “Africa compared with global leaders” chart.</li>
+<li><strong>indicators</strong> — indicator names and World Bank codes shown in chart captions.</li>
+</ul>
+</section>
+
+<section class="section" aria-labelledby="src-h">
+<h2 id="src-h">Original sources</h2>
+<ul>
+<li><a href="https://oxfordinsights.com/ai-readiness/government-ai-readiness-index-2025/">Oxford Insights, Government AI Readiness Index 2025</a></li>
+<li><a href="https://data.worldbank.org/">World Bank Open Data</a> (via the World Development Indicators API)</li>
+</ul>
+<p class="note">Values were downloaded from these public sources and lightly cleaned for this project. Reference years differ between countries and indicators, which is why each value carries its own year.</p>
+</section>
+
+</main>
+<footer class="site-footer">
+<div class="inner">
+<section><h3>AI in Africa</h3><p>Is the continent ready for the AI revolution? A data visualization project on AI readiness across Africa, with a focus on Togo.</p></section>
+<section><h3>Author</h3><ul><li>Yawovi Joseph Essossima (student ID 9980192)</li><li><a href="mailto:9980192@studenti.unige.it">9980192@studenti.unige.it</a></li><li>Università di Genova</li><li>Course: Data Visualization (90529)</li></ul></section>
+<section><h3>Data sources</h3><ul><li><a href="https://oxfordinsights.com/ai-readiness/government-ai-readiness-index-2025/">Oxford Insights AI Readiness Index 2025</a></li><li><a href="https://data.worldbank.org/">World Bank Open Data</a></li><li><a href="https://ourworldindata.org/artificial-intelligence">Our World in Data</a></li><li><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">Stanford AI Index 2026</a></li><li><a href="https://oecd.ai/en/">OECD.AI</a></li></ul><p>Last updated: 1 November 2026</p></section>
+</div>
+</footer>
+</body>
+</html>
